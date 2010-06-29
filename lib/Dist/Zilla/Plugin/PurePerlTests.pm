@@ -30,7 +30,7 @@ sub _copy_file {
     my $self = shift;
     my $file = shift;
 
-    ( my $name = $file->name() ) =~ s{/([^/]+)$}{/author-pp-$1};
+    ( my $name = $file->name() ) =~ s{/([^/]+)$}{/release-pp-$1};
 
     my $content = $file->content();
 
@@ -42,8 +42,8 @@ sub _copy_file {
 use Test::More;
 
 BEGIN {
-    unless ( \$ENV{AUTHOR_TESTING} ) {
-        plan skip_all => 'these tests are for testing by the author';
+    unless ( \$ENV{RELEASE_TESTING} ) {
+        plan skip_all => 'these tests are for testing by the release';
     }
 
     \$ENV{$env_var} = 1;
@@ -86,10 +86,10 @@ In your F<dist.ini>:
 
 This plugin is for modules which ship with a dual XS/pure Perl implementation.
 
-The plugin makes a copy of all your tests when doing author testing (via
-C<dzil test>). The copy will set an environment value that you specify in a
-C<BEGIN> block. You can use this to force your code to not load the XS
-implementation.
+The plugin makes a copy of all your tests when doing release testing (via
+C<dzil test> or C<dzil release>). The copy will set an environment value that
+you specify in a C<BEGIN> block. You can use this to force your code to not
+load the XS implementation.
 
 =head1 CONFIGURATION
 
