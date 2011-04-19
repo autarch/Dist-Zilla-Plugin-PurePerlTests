@@ -38,7 +38,15 @@ sub _copy_file {
 
     my $env_var = $self->env_var();
 
+    my $perl_line = q{};
+
+    if ( $content =~ s/^(\#![^\n]+)\n// ) {
+        $perl_line = $1;
+    }
+
     $content = <<"EOF";
+$perl_line
+
 use Test::More;
 
 BEGIN {
