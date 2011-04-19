@@ -1,3 +1,8 @@
+{{$NEXT}}
+
+- When rewriting tests, the shbang line is preserved, if one exists.
+
+
 0.02    2010-06-28
 
 - Switched to running the extra tests as release tests, not author tests.
