@@ -22,6 +22,8 @@ sub gather_files {
     for my $file ( grep { $_->name() =~ m<\At/.+\.t\z> }
         $self->zilla()->files()->flatten() ) {
 
+        next if $file->isa('Dist::Zilla::File::InMemory');
+
         $self->_copy_file($file);
     }
 }
