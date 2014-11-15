@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+0.03     2011-04-19
+
 - When rewriting tests, the shbang line is preserved, if one exists.
 
 
