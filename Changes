@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+0.04     2014-11-15
+
 - When making pure Perl copies of test files, this plugin now skips
   Dist::Zilla::File::InMemory objects. These are typically added by other
   plugins like Test::EOL or Test::Compile, and there's no usually no point in

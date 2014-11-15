@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::PurePerlTests - Run all your tests twice, once with XS code
 
 # VERSION
 
-version 0.03
+version 0.04
 
 # SYNOPSIS
 
