@@ -2,6 +2,7 @@ package Dist::Zilla::Plugin::PurePerlTests;
 
 use strict;
 use warnings;
+use namespace::autoclean;
 
 our $VERSION = '0.05';
 
@@ -20,7 +21,7 @@ has env_var => (
 sub gather_files {
     my $self = shift;
 
-    for my $file ( grep { $_->name() =~ m<\At/.+\.t\z> }
+    for my $file ( grep { $_->name() =~ m{\At/.+\.t\z} }
         @{ $self->zilla()->files() } ) {
 
         next if $file->isa('Dist::Zilla::File::InMemory');
