@@ -3,6 +3,8 @@ package Dist::Zilla::Plugin::PurePerlTests;
 use strict;
 use warnings;
 
+our $VERSION = '0.05';
+
 use Dist::Zilla::File::InMemory;
 
 use Moose;
