@@ -6,7 +6,6 @@ use warnings;
 use Dist::Zilla::File::InMemory;
 
 use Moose;
-use Moose::Autobox;
 
 with 'Dist::Zilla::Role::FileGatherer';
 
@@ -20,7 +19,7 @@ sub gather_files {
     my $self = shift;
 
     for my $file ( grep { $_->name() =~ m<\At/.+\.t\z> }
-        $self->zilla()->files()->flatten() ) {
+        @{ $self->zilla()->files() } ) {
 
         next if $file->isa('Dist::Zilla::File::InMemory');
 
