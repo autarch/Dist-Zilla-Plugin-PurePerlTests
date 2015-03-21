@@ -1,5 +1,8 @@
 {{$NEXT}}
 
+- Removed use of Moose::Autobox
+
+
 0.04     2014-11-15
 
 - When making pure Perl copies of test files, this plugin now skips
