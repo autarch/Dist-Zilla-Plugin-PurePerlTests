@@ -21,6 +21,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla::File::InMemory" => 0,
     "Dist::Zilla::Role::FileGatherer" => 0,
     "Moose" => 0,
+    "namespace::autoclean" => 0,
     "strict" => 0,
     "warnings" => 0
   },
@@ -47,6 +48,7 @@ my %FallbackPrereqs = (
   "IPC::Open3" => 0,
   "Moose" => 0,
   "Test::More" => "0.96",
+  "namespace::autoclean" => 0,
   "strict" => 0,
   "warnings" => 0
 );

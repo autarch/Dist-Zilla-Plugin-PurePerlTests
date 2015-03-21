@@ -1,6 +1,7 @@
 requires "Dist::Zilla::File::InMemory" => "0";
 requires "Dist::Zilla::Role::FileGatherer" => "0";
 requires "Moose" => "0";
+requires "namespace::autoclean" => "0";
 requires "strict" => "0";
 requires "warnings" => "0";
 
