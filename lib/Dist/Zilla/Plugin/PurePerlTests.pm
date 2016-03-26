@@ -34,7 +34,7 @@ sub _copy_file {
     my $self = shift;
     my $file = shift;
 
-    ( my $name = $file->name() ) =~ s{/([^/]+)$}{/release-pp-$1};
+    ( my $name = $file->name() ) =~ s{t/(.+)$}{xt/author/pp-$1};
 
     my $content = $file->content();
 
@@ -45,19 +45,11 @@ sub _copy_file {
     my $perl_line = q{};
 
     if ( $content =~ s/^(\#![^\n]+)\n// ) {
-        $perl_line = $1;
+        $perl_line = $1 . "\n\n";
     }
 
     $content = <<"EOF";
-$perl_line
-
-use Test::More;
-
-BEGIN {
-    unless ( \$ENV{RELEASE_TESTING} ) {
-        plan skip_all => 'these tests are for release testing';
-    }
-
+${perl_line}BEGIN {
     \$ENV{$env_var} = 1;
 }
 

@@ -1,5 +1,13 @@
 {{$NEXT}}
 
+- The generated tests are now added as "xt/author/pp-*". This lets other
+  Dist::Zilla plugins which handle tests under xt do the right thing.
+
+- The generated tests no longer include their own "only run under
+  RELEASE_TESTING" block. This is handled by whatever plugin you might use to
+  handle tests in xt/.
+
+
 0.05     2015-03-21
 
 - Removed use of Moose::Autobox
