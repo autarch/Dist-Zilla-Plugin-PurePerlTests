@@ -1,5 +1,7 @@
 {{$NEXT}}
 
+0.06     2016-03-26
+
 - The generated tests are now added as "xt/author/pp-*". This lets other
   Dist::Zilla plugins which handle tests under xt do the right thing.
 
