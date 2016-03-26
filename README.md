@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::PurePerlTests - Run all your tests twice, once with XS code
 
 # VERSION
 
-version 0.04
+version 0.06
 
 # SYNOPSIS
 
@@ -38,10 +38,10 @@ contain this comment.
 
 # SUPPORT
 
-Please report any bugs or feature requests to
-`bug-dist-zilla-plugin-pureperltests@rt.cpan.org`, or through the web
-interface at [http://rt.cpan.org](http://rt.cpan.org). I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+Bugs may be submitted through [the RT bug tracker](http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-PurePerlTests)
+(or [bug-dist-zilla-plugin-pureperltests@rt.cpan.org](mailto:bug-dist-zilla-plugin-pureperltests@rt.cpan.org)).
+
+I am also usually active on IRC as 'drolsky' on `irc://irc.perl.org`.
 
 # DONATIONS
 
@@ -55,18 +55,18 @@ inasmuch as I have in the past, for as long as it interests me.
 
 Similarly, a donation made in this way will probably not make me work on this
 software much more, unless I get so many donations that I can consider working
-on free software full time, which seems unlikely at best.
+on free software full time (let's all have a chuckle at that together).
 
-To donate, log into PayPal and send money to autarch@urth.org or use the
-button on this page: [http://www.urth.org/~autarch/fs-donation.html](http://www.urth.org/~autarch/fs-donation.html)
+To donate, log into PayPal and send money to autarch@urth.org, or use the
+button at [http://www.urth.org/~autarch/fs-donation.html](http://www.urth.org/~autarch/fs-donation.html).
 
 # AUTHOR
 
-Dave Rolsky <autarch@urth.org>
+Dave Rolsky &lt;autarch@urth.org>
 
-# COPYRIGHT AND LICENSE
+# COPYRIGHT AND LICENCE
 
-This software is Copyright (c) 2010 - 2014 by Dave Rolsky.
+This software is Copyright (c) 2010 - 2016 by Dave Rolsky.
 
 This is free software, licensed under:
 
